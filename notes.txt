@@ -1,0 +1,8 @@
+
+KEY PARTIES OF A CHROME EXTENSION
+popup.js <---> tab (content script) <---> background.js script
+
+
+For the extension task:
+The extension has it's own UI that you'll develop and integrate using Chrome extension APIs... then the site is a standlone application that you'll create separately but the backend will link them.
+The extension records videos and sends it to the backend (for storage), then the web app can retrieve those videos from the backend and show it to users. (edited) 

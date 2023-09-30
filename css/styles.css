@@ -1,0 +1,135 @@
+:root {
+    --primary: #120B48;
+    --text1: #413C6D;
+    --grey: #928FAB;
+
+  
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+body {
+    padding: 10px;
+}
+
+
+.content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    gap: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+.header>:nth-child(2) {
+    display: flex;
+    gap: 15px;
+}
+.header>:nth-child(2)>:nth-child(n) {
+    width: 25px;
+}
+
+.content > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text1);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+.icons > :nth-child(1) {
+    color:var(--grey);
+}
+.icons > :nth-child(2) {
+    color: var(--primary);
+}
+.icons-tab {
+    text-align: center;
+}
+.icons-tab > p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.button_cont button{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: white;
+    width: 100%;
+
+}
+
+.button_cont button:hover{
+    box-shadow: 1px 0px 10p #eee;
+}
+
+.permission {
+    padding: 20px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    background: white;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.permission>:nth-child(1){
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+}
+
+.permission>:nth-child(1)> p {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary);
+}
+
+.toggle-slide {
+    width: 36px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 12px;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.toggled {
+    background-color: var(--primary); 
+    justify-content: flex-end;
+  }
+
+.toggle-slide > button {
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    border: none;
+}

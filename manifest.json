@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut",
+    "description": "It records the user's screen",
+    "icons": {
+        "128": "images/android-chrome-512x512.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/android-chrome-512x512.png",
+            "32": "images/android-chrome-512x512.png",
+            "128": "images/android-chrome-512x512.png"
+        }
+
+    },
+
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "version": "1.0.0"
+}
